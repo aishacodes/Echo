@@ -1,0 +1,129 @@
+body {
+    background: #EDF0F7;
+    overflow-y: hidden;
+}
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 3rem auto;
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+    border-radius: 20px;
+    display: flex;
+    padding: 3rem 4rem;
+}
+
+.speaker-image {
+    width: 40%;
+}
+
+.speaker-image img {
+    height: 100%;
+}
+
+.speaker-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.speaker-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #15181A;
+    margin-bottom: 2rem;
+}
+
+.speaker-info p.name {
+    font-size: 1.5rem;
+    color: #858997;
+    margin-bottom: 1rem;
+}
+
+.speaker-info p.price {
+    font-size: 2rem;
+    color: #858997;
+    margin-bottom: 2rem;
+}
+
+.speaker-info p.c-color {
+    font-size: 1.33rem;
+    color: #141821;
+    margin-bottom: 1rem;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.black,
+.grey,
+.walnut {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.black {
+    position: relative;
+}
+
+.black::before {
+    position: absolute;
+    content: url(../media/mark.svg);
+    left: .7rem;
+}
+
+.colors span {
+    font-size: 1.167rem;
+    color: #141821;
+    margin-left: 10px;
+}
+
+.speaker-info p.c-size {
+    font-size: 1.33rem;
+    color: #141821;
+    margin-bottom: 1rem;
+}
+
+.sizes {
+    display: flex;
+}
+
+.sizes p {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1.41rem 1.75rem;
+    font-weight: bold;
+    font-size: 1.167rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 1.25rem;
+}
+
+.sizes p.Es {
+    background: linear-gradient(180deg, #E33C7A 0%, #C036D0 100%);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sizes p.Ed,
+p.Ess {
+    color: black;
+    border: 2px solid #C3C6D1;
+}
